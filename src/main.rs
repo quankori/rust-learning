@@ -1,0 +1,35 @@
+mod control_flow;
+mod matchs;
+mod module;
+mod structs;
+mod traits;
+mod types;
+mod variable;
+mod vector;
+fn main() {
+    println!("Variable");
+    variable::string();
+    variable::mutable();
+    variable::constants();
+    variable::shadowing();
+    println!("Data types");
+    types::data();
+    types::tuple();
+    types::enum_struct();
+    types::array();
+    println!("Module");
+    module::eat_at_restaurant();
+    println!("Control flow");
+    control_flow::if_else();
+    control_flow::for_loop();
+    control_flow::while_loop(2);
+    println!("Structs");
+    structs::normal();
+    structs::hash_map();
+    println!("Traits");
+    traits::init();
+    println!("Match");
+    matchs::init();
+    println!("Vector");
+    vector::init();
+}
